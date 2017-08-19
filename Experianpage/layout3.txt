@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>layout3</title>
+    <style>
+        .rv{
+            float: right;
+            margin-right: 30px;
+            width: 250px;
+            height: 60px;
+        }
+        #line {
+            border: 2px solid blue;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            width: 100%;
+            height: 0;
+        }
+        #one{
+            float: left;
+            width: 200px;
+            height: 200px;
+        }
+        #block{
+            content: "";
+            clear: both;
+            display: block;
+        }
+        #h1{
+            position: absolute;
+            left :225px;
+            top: 70px;
+        }
+        #p{
+            position: absolute;
+            left: 225px;
+            top: 112px;
+        }
+        #box1{
+            position: absolute;
+            top: 330px;
+            border: 1px solid gray;
+            border-radius: 10px;
+            width: 412px;
+            padding: 15px;
+            height: 200px;
+        }
+        #box2{
+            position: absolute;
+            top: 330px;
+            left: 458px;
+            border: 1px solid gray;
+            border-radius: 10px;
+            width: 412px;
+            padding: 15px;
+            height: 200px;
+        }
+
+        #box3{
+            position: absolute;
+            top: 330px;
+            left: 910px;
+            border: 1px solid gray;
+            border-radius: 10px;
+            width: 412px;
+            padding: 15px;
+            height: 200px;
+        }
+        #unorder{
+            background-color: blue;
+            list-style-type: none;
+            position: absolute;
+            bottom: 0;
+            overflow: hidden;
+            padding: 0;
+            width: 99%;
+        }
+        #list{
+            display: block;
+            color: white;
+            float: left;
+            padding: 2px;
+            border-left: 1px solid black;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+<div>
+    <div style="overflow: auto">
+        <img class="rv" src="Logo.png">
+    </div>
+    <div id="line"></div>
+
+    <div id="block">
+        <img id="one" src="pushbuttons-reduced.jpg">
+        <h1 id="h1">Welcome,</h1>
+        <p id="p">In publishing and graphic design, lorem ipsum is a filler text commonly used to demonstrate the graphic elements of a document or visual presentation. Replacing meaningful content with placeholder text allows designers to design the form of the content before the content itself has been produced.
+        <br><br>The lorem ipsum text is typically a scrambled section of De finibus bonorum et malorum, a 1st-century BC Latin text by Cicero, with words altered, added, and removed to make it nonsensical, improper Latin.
+        <br><br>A variation of the ordinary lorem ipsum text has been used in typesetting since the 1960s or earlier, when it was popularized by advertisements for Letraset transfer sheets. It was introduced to the Information Age in the mid-1980s by Aldus Corporation, which employed it in graphics and word-processing templates for its desktop publishing program PageMaker</p>
+    </div>
+    <div>
+        <div id="box1">
+            <h1>Build</h1>
+            <p>Nowadays a variety of software, including text and plug-ins, in common with the canonical adaptations other than looking like (and often being) jumbled Latin. Apple's Pages and Keynote software employ such jumbled text as sample screenplay layout. Lorem ipsum is also featured on Joomla!, Google Docs, and WordPress web content managers. Microsoft Word 2007, 2010, 2013 and 2016 have a lorem ipsum feature.</p>
+        </div>
+        <div id="box2">
+            <h1>Test</h1>
+            <ul>
+                <li>Loren ipsum something</li>
+                <li>Something</li>
+                <li>....SomeThing...</li>
+                <li>......Something......</li>
+                <li>Let Me know if You wants me to add a new line</li>
+            </ul>
+        </div>
+        <div id="box3">
+            <h1>Deploy</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+        <div>
+            <ul id="unorder">
+                <li style="float: left" ><a id="list" href="#Home">Home</a></li>
+                <li style="float: left"><a id="list" href="#About">About</a></li>
+                <li style="float: left"><a id="list" href="#Contact">Contact</a></li>
+                <li style="float: right; margin-right: 30px">&copy Copyright 2011</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
